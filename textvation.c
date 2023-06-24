@@ -124,6 +124,7 @@ void editorRefreshScreen();
 char *editorPrompt(char *prompt, void (*callback)(char *, int));
 
 /*** terminal ***/
+
 void die(const char *s)
 {
     write(STDOUT_FILENO, "\x1b[2J", 4);
